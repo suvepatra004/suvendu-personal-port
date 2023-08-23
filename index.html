@@ -1,0 +1,249 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvendu Kumar Patra Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c30a2f5d4a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <!-- <img src="suveimg.png" alt="Not available" class="myimg"> -->
+            <nav class="navigation">
+                <img src="images/suve-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Certificates</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="close" onclick="closemenu()">Close</i>
+                </ul>
+                <i class="menu" onclick="openmenu()">Menu</i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web <span>Developer</span></p>
+                <h1>Hi, <br>I'm <span>Suvendu</span> Patra</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------ABOUT------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="" alt="user-image not available" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm Suvendu Patra, a beginner level Web Developer and I basically do front-end developement and design 
+                        for small projects of my own. Over last six months
+                        I have taken care of the skills that I'm doing now. I'm basically doing web developement where 
+                        I did 3 small projects, yet I am fresher and looking for jobs also open for freelancing. I came out of
+                        my time as listning musics, cycling and writing blogs.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developement</span> <br><!--Using HTML CSS JS--></li>
+                            <li><span>Java C C++</span> <br>Programing languages</li>
+                            <li><span>Spring Boot</span> <br>Frameworks</li>
+                            <li><span>SQL DBMS</span></li>
+                            <li><span>Operating System</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Developement</span> <br> 6 months</li>
+                            <li><span>Core Java</span> <br> 6 months</li>
+                            <li><span>C++</span> <br> 5 months</li>
+                            <li><span>C Programing</span> <br> 3 months</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span> <br>ITM from Ravenshaw University</li>
+                            <li><span>2019-2021</span> <br>12th from Nayagarh HSS</li>
+                            <li><span>2019</span> <br>10th Board from DHS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------SERVICES------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h1>Web Developement</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ad amet. In, assumenda
+                        molestiae similique doloremque
+                        debitis obcaecati.
+                    </p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h1>Website Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ad amet. In, assumenda
+                        molestiae similique doloremque
+                        debitis obcaecati.
+                    </p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h1>Backend Developement</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ad amet. In, assumenda
+                        molestiae similique doloremque
+                        debitis obcaecati.
+                    </p>
+                    <a href="#">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------PORTFOLIO------------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>This is my personal poerfolio that engage my work to my clients
+                            and recruiters to build connections.
+                        </p>
+                        <a href="#">?</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Web Calculator</h3>
+                        <p>This is a simple calculator where I add some JS functionality but it mainly built for 
+                            its design that is made with HTML and CSS.
+                        </p>
+                        <a href="file:///C:/Users/Raja/Desktop/VS%20code%20Folder/Web%20Calculator/BaseCalc.html">?</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Github Profiles</h3>
+                        <p>This is a specific github repo of my id where I post some kind of coding stuffs.
+                        </p>
+                        <a href="https://github.com/suvepatra004/Apna-College-Alpha-batch-Java-codes">?</a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------------CONTACTS-------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> contact@email.con</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 8984384938</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/suvendu.patra.7127/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/Suvendu24293667/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/suvendu-patra-723850230/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/suvepatra004/"><i class="fab fa-github"></i></a>
+                    </div>
+
+                    <a href="images/CV.pdf" class="btn btn2" download>Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <p class="notice">Proceed with your details in contact form even if it isn't visible</p>
+                    <!-- <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span> -->
+                    <script src="https://sheetdb.io/s/f/ngfbmjfww6m0o.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Suvendu. Made it efficiently❤️</p>
+        </div>
+    </div>
+
+    <!-- -----------------JAVASCRIPT---------------------->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        // For the phone menu bar icons
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzRJVBz2uCSdf-eMdIl8k5bLQ8pfKmEWIwv16J0plFaPARHPzGAdVzZle1vmgiiR3Xh/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListner('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
