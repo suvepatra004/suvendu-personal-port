@@ -1,459 +1,83 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poopins', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background: #080808;
-    color: #fff;
-}
 
-/* ----------------------Header------------------------ */
+/* -------------------Description------------- */
 
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/suve-background.png);
-    background-size: cover;
-    background-position: center;
-}
-.container{
-    padding: 10px 5%;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.logo{
-    width: 140px;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 19px;
-    position: relative;
-}
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background:#605bf2;
+.description {
+    margin: 0;
+    padding: 0;
     position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.2s;
+    display: grid;
+    margin-top: 21%;
+    margin-left: 5%;
 }
-nav ul li a:hover::after {
-    width: 100%;
-}
-.header-text {
-    margin-top: 20%;
-    font-size: 30px;
-    cursor: default;
-}
-.header-text h1{
-    transition: transform 0.5s;
-}
-.header-text p {
-    transition: transform 0.5s;
-}
-
-.header-text h1:hover{
-    transform: translateX(-15px);
-}
-.header-text p:hover{
-    transform: translateX(-15px);
-}
-.header-text p span,h1 span {
-    color: #605bf2;
-}
-
-/* 
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(suveimg.png);
-    background-size: cover;
-    background-position: center;
-    background-position: left; 
-} 
-*/
-
-/* --------------------------ABOUT-------------------------- */
-
-#about {
-    padding: 80px 0;
-    color: #ababab;
-    /* margin-top: 55dvh; */
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.about-col-1{
-    flex-basis: 35%;
-}
-.about-col-1 img{
-    width: 100%;
-    /* height: 80%; */
-    border-radius: 15px;
-    /* margin-left: 20px; */
-}
-.about-col-2 {
-    flex-basis: 60%;
-}
-.sub-title {
+.description h1{
     font-size: 60px;
-    font-weight: 500;
-    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #33ffd8;
 }
-.tab-titles {
-    display: flex;
-    margin: 20px 0 40px;
-}
-.tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background-color: #605bf2;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.2s;
-}
-.tab-links.active-link::after {
-    width: 50%;
-}
-.tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-    font-size: 14px;
-}
-.tab-contents ul li span {
-    color: #605bf7;
-    font-size: 14px;
-}
-.tab-contents {
+.description p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgba(3, 25, 38, 0.564);
     display: none;
 }
-.tab-contents.active-tab {
-    display: block;
-}
-
-/* ------------------------SERVICES---------------------- */
-#services {
-    padding: 20px 20px;
-    /* margin: 20px; */
-}
-.container h1 {
-    font-family: 'Poopins', sans-serif;
-}
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.services-list div {
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 20px;
-    transition: background 0.3s, transform 0.3s;
-}
-.services-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div a {
+.description a {
     text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.services-list div:hover{
-    background: #605bf2;
-    transform: translateY(5px);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgba(3, 25, 38, 0.564);
+    margin-left: 70%;
+    padding-top: 13px;
 }
 
-/* ------------------PORTFOLIO-------------------- */
+/* ----------------Calculator-------------- */
 
-#portfolio{
-    padding: 30px 20px;
-    margin: 10px;
-}
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work img{
+.container {
     width: 100%;
-    border: 10px;
-    display: block;
-    transition: transform 0.3s;
-}
-.layer {
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #5f5bc1);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
+    height: 100vh;
+    background: #e3f9ff;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 40px;
-    text-align: center;
-    flex-direction: column;
-    font-size: 14px;
-    transition: height 0.2s;
 }
-.layer a{
-    text-decoration: none;
-    color: #605bf7;
-    margin-top: 20px;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 20px;
+}
+.calculator form input {
+    border: 0;
+    outline: 0;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-.layer h3{
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-.work:hover img{
-    transform: scale(1.1);
-}
-.work:hover .layer{
-    height: 100%;
-}
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #723ae2;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
     color: #fff;
-    transition: background 0.2s;
-}
-.btn:hover {
-    background: #605bf7;
-}
-
-
-/* ------------CONTACT----------- */
-.contact-left {
-    flex-basis: 35%;
-    margin-left: 20px;
-}
-.contact-right{
-    flex-basis: 60%;
-    margin-right: 20px;
-}
-.contact-left p {
-    margin-top: 25px;
-}
-.contact-left p i {
-    color: #605bf2;
-    margin-right: 15px;
-    font-size: 25px;
-}
-.social-icons{
-    margin-top: 30px;
-}
-.social-icons a {
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.2s;
-}
-.social-icons a:hover{
-    color: #605bf2;
-    transform: translateY(-3px);
-}
-.btn.btn2{
-    display: inline-block;
-    background: #605bf7;
     cursor: pointer;
+    margin: 10px;
 }
-.contact-right form{
-    width: 100%;
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
 }
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 40px;
+    font-family: monospace;
+    box-shadow: none;
 }
-form .btn2{
-    padding: 14px 60px;
-    font-size: 15px;
-    margin-top: 20px;
+form input.equal {
+    width: 145px;
 }
-
-.copyright{
-    margin: 10px 0;
-    font-size: 14px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    color: #ababab;
-    width: 100%;
-    background: #262626;
-    padding: 25px 0;
-}
-
-/* -----------------css for small screen------------------ */
-nav .menu  {
-    display: none;
-}
-nav .close {
-    display: none;
-}
-
-@media only screen and (max-width: 600px) {
-    #header{
-        background-image: url(images/suve-phone.png);
-    }
-    
-    .header-text{
-        margin-top: 25%;
-        font-size: 16px;
-        text-align: center;
-        transition: transform 0.5s;
-    }
-    .header-text h1:hover{
-        transform: translateY(-7px);
-    }
-    .header-text p:hover{
-        transform: translateY(-5px);
-    }
-    .header-text h1 {
-        font-size: 30px;
-        transition: transform 0.5s;
-    }
-    .header-text p {
-        transition: transform 0.3s;
-    }
-    nav .menu {
-        display: block;
-        font-size: 15px;
-        color: #ababab;
-        font-family: sans-serif;
-        text-decoration: none;
-        opacity: 80%;
-        background-color: #262626;
-        border-radius: 3px;
-        font-style: normal;
-        font-weight: 200;
-    }
-    nav .close {
-        display: block;
-        font-size: 15px;
-        color: #f6f3f3ec;
-        font-family: sans-serif;
-        text-decoration: none;
-        opacity: 80%;
-        font-style: normal;
-        font-weight: 200;
-    }
-    nav ul {
-        background-color: #9d9afcf1;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-    nav ul .close {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-    nav ul .menu {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-
-    .about-col-1 {
-        flex-basis: 100%;
-        display: none;
-    }
-    .sub-title{
-        font-size: 45px;
-    }
-    .contact-left, .contact-right {
-        flex-basis: 100%;
-    }
-}
-
-#msg {
-    color: #61b752;
-    margin-top: -30px;
-    display: block;
-}
-.notice {
-    font-size: 15px;
-    margin-bottom: 20px;
-    display: block;
-    color: #ababab;
-    cursor: default;
-    transition: color 0.3s;
-}
-.notice:hover {
-    color: indianred;
+form input.operator {
+    color: #33ffd8;
 }
