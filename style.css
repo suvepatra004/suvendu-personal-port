@@ -72,10 +72,10 @@ nav ul li a:hover::after {
 }
 
 .header-text h1:hover{
-    transform: translateX(-15px);
+    transform: scale(3);
 }
 .header-text p:hover{
-    transform: translateX(-15px);
+    transform: scale(3);
 }
 .header-text p span,h1 span {
     color: #605bf2;
