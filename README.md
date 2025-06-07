@@ -25,8 +25,8 @@ You can find my resume inside the repo as:
 ## 📬 Contact Me
 
 - GitHub: [github.com/suvepatra004](https://github.com/suvepatra004)
-- LinkedIn: [linkedin.com/in/your-profile]() *(update this)*
-- Email: [Gmail](mailto:suvefuful2018@gmail.com) *(update this)*
+- LinkedIn: [linkedin.com/in/your-profile]() 
+- Email: [Gmail](mailto:suvefuful2018@gmail.com) 
 
 ## 📌 License
 
@@ -34,4 +34,3 @@ This project is open source and free to use.
 
 ---
 
-Feel free to fork and customize it!
