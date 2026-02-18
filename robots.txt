@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suvendu-personal-port.vercel.app/sitemap.xml
