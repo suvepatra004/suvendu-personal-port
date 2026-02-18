@@ -1,249 +1,547 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suvendu Kumar Patra Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c30a2f5d4a.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suvendu Kumar Patra</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c30a2f5d4a.js" crossorigin="anonymous" defer></script>
 </head>
-
 <body>
-    <div id="header">
-        <div class="container">
-            <!-- <img src="suveimg.png" alt="Not available" class="myimg"> -->
-            <nav class="navigation">
-                <img src="images/suve-logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#">Certificates</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contacts</a></li>
-                    <i class="close" onclick="closemenu()">Close</i>
-                </ul>
-                <i class="menu" onclick="openmenu()">Menu</i>
-            </nav>
 
-            <div class="header-text">
-                <p>Web <span>Developer</span></p>
-                <h1>Hi, <br>I'm <span>Suvendu</span> Patra</h1>
-            </div>
+  <!-- ======== CURSOR ======== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ======== NAV ======== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">SP<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#cv" class="nav-link">CV</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
+        <button class="nav-close" id="nav-close" aria-label="Close menu">&#10005;</button>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ======== HERO ======== -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <!-- CHANGED: removed QA Engineer, updated to current identity -->
+        <span class="hero-eyebrow reveal">Frontend Developer · Product Builder · Vibe Coder</span>
+        <h1 class="hero-heading reveal">
+          Suvendu<br />Kumar<br /><em>Patra</em>
+        </h1>
+        <p class="hero-sub reveal">
+          I build thoughtful web products — clean code,<br class="br-desk" /> sharp design, and a whole lot of curiosity.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#work" class="btn btn-primary">See my work <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
         </div>
+      </div>
+      <div class="hero-img-wrap reveal">
+        <img src="images/profile.jpg" alt="Suvendu Kumar Patra" class="hero-img" />
+        <div class="hero-img-badge">
+          <span>Available</span>
+          <i class="fas fa-circle"></i>
+        </div>
+      </div>
     </div>
-
-    <!-- --------------------ABOUT------------------------>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="" alt="user-image not available" >
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>I'm Suvendu Patra, a beginner level Web Developer and I basically do front-end developement and design 
-                        for small projects of my own. Over last six months
-                        I have taken care of the skills that I'm doing now. I'm basically doing web developement where 
-                        I did 3 small projects, yet I am fresher and looking for jobs also open for freelancing. I came out of
-                        my time as listning musics, cycling and writing blogs.
-                    </p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Developement</span> <br><!--Using HTML CSS JS--></li>
-                            <li><span>Java C C++</span> <br>Programing languages</li>
-                            <li><span>Spring Boot</span> <br>Frameworks</li>
-                            <li><span>SQL DBMS</span></li>
-                            <li><span>Operating System</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Web Developement</span> <br> 6 months</li>
-                            <li><span>Core Java</span> <br> 6 months</li>
-                            <li><span>C++</span> <br> 5 months</li>
-                            <li><span>C Programing</span> <br> 3 months</li>
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021-2024</span> <br>ITM from Ravenshaw University</li>
-                            <li><span>2019-2021</span> <br>12th from Nayagarh HSS</li>
-                            <li><span>2019</span> <br>10th Board from DHS</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="hero-marquee-wrap">
+      <!-- CHANGED: updated marquee to reflect current status -->
+      <div class="hero-marquee">
+        <span>Frontend Dev</span><span class="sep">·</span>
+        <span>Product Builder</span><span class="sep">·</span>
+        <span>Web3 Explorer</span><span class="sep">·</span>
+        <span>React Learner</span><span class="sep">·</span>
+        <span>Solidity</span><span class="sep">·</span>
+        <span>Frontend Dev</span><span class="sep">·</span>
+        <span>Product Builder</span><span class="sep">·</span>
+        <span>Web3 Explorer</span><span class="sep">·</span>
+        <span>React Learner</span><span class="sep">·</span>
+        <span>Solidity</span><span class="sep">·</span>
+      </div>
     </div>
+  </section>
 
-    <!-- --------------------SERVICES------------------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h1>Web Developement</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ad amet. In, assumenda
-                        molestiae similique doloremque
-                        debitis obcaecati.
-                    </p>
-                    <a href="#">Learn more...</a>
-                </div>
-                <div>
-                    <i class="fas fa-crop-alt"></i>
-                    <h1>Website Design</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ad amet. In, assumenda
-                        molestiae similique doloremque
-                        debitis obcaecati.
-                    </p>
-                    <a href="#">Learn more...</a>
-                </div>
-                <div>
-                    <i class="fab fa-app-store"></i>
-                    <h1>Backend Developement</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ad amet. In, assumenda
-                        molestiae similique doloremque
-                        debitis obcaecati.
-                    </p>
-                    <a href="#">Learn more...</a>
-                </div>
-            </div>
+  <!-- ======== ABOUT ======== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span class="label-text">About</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <h2 class="section-heading">
+            Building at the<br />intersection of<br /><em>code &amp; craft.</em>
+          </h2>
         </div>
+        <div class="about-right reveal">
+          <!-- CHANGED: replaced QA Engineer mention with Aspiring Frontend Developer -->
+          <p class="about-body">
+            Hey — I'm Suvendu, an <strong>Aspiring Frontend Developer</strong> based in India,
+            passionate about building clean, user-focused web products. After completing a B.Sc. in
+            ITM from Ravenshaw University and a stint at Accenture, I'm now fully focused on
+            growing as a frontend developer and product builder.
+          </p>
+          <p class="about-body">
+            I'm currently deepening my skills in <strong>React</strong>, exploring
+            <strong>Web3 &amp; Solidity</strong> smart contracts, and working on personal projects.
+            When I'm not in the editor, I'm cycling, writing, or tuned into something good.
+          </p>
+          <div class="about-tags">
+            <span class="tag">HTML · CSS · JS</span>
+            <span class="tag">React</span>
+            <span class="tag">Java · Spring Boot</span>
+            <span class="tag">SQL · DBMS</span>
+            <span class="tag">Web3 · Solidity</span>
+            <span class="tag">Git · GitHub</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- --------------------PORTFOLIO------------------------>
+  <!-- ======== WORK ======== -->
+  <section id="work" class="section work">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span class="label-text">Work</span>
+      </div>
+      <h2 class="section-heading reveal">Selected Projects</h2>
 
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png">
-                    <div class="layer">
-                        <h3>Portfolio Website</h3>
-                        <p>This is my personal poerfolio that engage my work to my clients
-                            and recruiters to build connections.
-                        </p>
-                        <a href="https://suvepatra004.github.io/suvendu-personal-port/">?</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Web Calculator</h3>
-                        <p>This is a simple calculator where I add some JS functionality but it mainly built for 
-                            its design that is made with HTML and CSS.
-                        </p>
-                        <a href="/Web Calculator/BaseCalc.html">?</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Github Profiles</h3>
-                        <p>This is a specific github repo of my id where I post some kind of coding stuffs.
-                        </p>
-                        <a href="https://github.com/suvepatra004/">?</a>
-                    </div>
-                </div>
+      <div class="work-list">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" data-index="01">
+          <div class="project-img-wrap">
+            <img src="images/work-1.png" alt="Personal Portfolio" class="project-img" />
+            <div class="project-overlay">
+              <a href="https://suvepatra004.github.io/suvendu-personal-port/" target="_blank" rel="noopener" class="project-link-icon" aria-label="Visit site">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
             </div>
-            <a href="" class="btn">See more</a>
-        </div>
-    </div>
-
-    <!-- --------------------CONTACTS-------------------------->
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>suvepatra2003@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> +91 8984384938</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/suvendu.patra.7127/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com/Suvendu24293667/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/suvendu-patra-723850230/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/suvepatra004/"><i class="fab fa-github"></i></a>
-                    </div>
-
-                    <a href="images/CV.pdf" class="btn btn2" download>Download Resume</a>
-                </div>
-                <div class="contact-right">
-                    <p class="notice">Proceed with your details in contact form even if it isn't visible</p>
-                    <!-- <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span> -->
-                    <script src="https://sheetdb.io/s/f/ngfbmjfww6m0o.js"></script>
-                </div>
+          </div>
+          <div class="project-meta">
+            <div class="project-info">
+              <span class="project-num">01</span>
+              <div>
+                <h3 class="project-title">Personal Portfolio</h3>
+                <p class="project-desc">My personal portfolio site — built with HTML, CSS, and vanilla JS. Clean, responsive, and fully self-made.</p>
+              </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright @ Suvendu. Made it efficiently❤️</p>
-        </div>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://suvepatra004.github.io/suvendu-personal-port/" target="_blank" rel="noopener" class="project-cta">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" data-index="02">
+          <div class="project-img-wrap">
+            <img src="images/work-2.png" alt="Web Calculator" class="project-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/suvepatra004/" target="_blank" rel="noopener" class="project-link-icon" aria-label="Visit GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <div class="project-info">
+              <span class="project-num">02</span>
+              <div>
+                <h3 class="project-title">Web Calculator</h3>
+                <p class="project-desc">A sleek, design-first web calculator with full JS functionality. Focused on clean UI and pixel-perfect layout.</p>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://github.com/suvepatra004/" target="_blank" rel="noopener" class="project-cta">
+              View on GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" data-index="03">
+          <div class="project-img-wrap project-img-placeholder">
+            <span class="placeholder-text">Screenshot Coming Soon</span>
+            <div class="project-overlay">
+              <a href="https://github.com/suvepatra004/" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-meta">
+            <div class="project-info">
+              <span class="project-num">03</span>
+              <div>
+                <h3 class="project-title">More on GitHub</h3>
+                <p class="project-desc">Browse all my repositories, explorations, and open-source contributions — including Web3 and product experiments.</p>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>Web3</span><span>Java</span><span>Spring Boot</span>
+            </div>
+            <a href="https://github.com/suvepatra004/" target="_blank" rel="noopener" class="project-cta">
+              View GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
     </div>
+  </section>
 
-    <!-- -----------------JAVASCRIPT---------------------->
+  <!-- ======== EXPERIENCE ======== -->
+  <!-- CHANGED: Completely rebuilt — Accenture only, + Currently Learning, + Education, + Certifications -->
+  <section id="experience" class="section experience">
+    <div class="container">
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+      <!-- WHERE I'VE WORKED -->
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span class="label-text">Experience</span>
+      </div>
+      <h2 class="section-heading reveal">Where I've Worked</h2>
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+      <div class="exp-list">
+        <div class="exp-item reveal">
+          <div class="exp-year">2024 — Nov 2025</div>
+          <div class="exp-body">
+            <h3 class="exp-role">QA Engineer</h3>
+            <p class="exp-company">Accenture, India</p>
+            <p class="exp-desc">
+              Worked on quality assurance and testing of enterprise-grade software products.
+              Gained hands-on exposure to full-stack environments, test automation, and
+              agile delivery workflows.
+            </p>
+            <div class="exp-tags">
+              <span>QA</span><span>Test Automation</span><span>Agile</span><span>Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    </script>
-    <script>
-        // For the phone menu bar icons
-        var sidemenu = document.getElementById("sidemenu")
+      <!-- CURRENTLY LEARNING -->
+      <div class="exp-divider reveal"></div>
 
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzRJVBz2uCSdf-eMdIl8k5bLQ8pfKmEWIwv16J0plFaPARHPzGAdVzZle1vmgiiR3Xh/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+      <div class="section-label reveal" style="margin-top: 64px;">
+        <span class="label-line"></span>
+        <span class="label-text">Currently Learning</span>
+      </div>
+      <h2 class="section-heading reveal">What I'm Building On</h2>
 
-        form.addEventListner('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message Sent Successfully!"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+      <div class="exp-list">
+        <div class="exp-item reveal">
+          <div class="exp-year">Nov 2025 — Present</div>
+          <div class="exp-body">
+            <h3 class="exp-role">Frontend Development (React)</h3>
+            <p class="exp-company">Self-directed</p>
+            <p class="exp-desc">
+              Deep-diving into React — component architecture, hooks, state management,
+              and building production-ready UIs. Working on personal projects to solidify
+              real-world frontend skills.
+            </p>
+            <div class="exp-tags">
+              <span>React</span><span>JavaScript</span><span>CSS</span><span>HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-year">Nov 2025 — Present</div>
+          <div class="exp-body">
+            <h3 class="exp-role">Web3 &amp; Solidity</h3>
+            <p class="exp-company">Cyfrin Updraft · Self-directed</p>
+            <p class="exp-desc">
+              Learning smart contract development using Solidity, blockchain fundamentals,
+              and decentralized application (dApp) architecture through structured courses
+              and hands-on projects.
+            </p>
+            <div class="exp-tags">
+              <span>Solidity</span><span>Web3</span><span>Blockchain</span><span>dApps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="exp-divider reveal"></div>
+
+      <div class="section-label reveal" style="margin-top: 64px;">
+        <span class="label-line"></span>
+        <span class="label-text">Education</span>
+      </div>
+      <h2 class="section-heading reveal">Academic Background</h2>
+
+      <div class="exp-list">
+        <div class="exp-item reveal">
+          <div class="exp-year">2021 — 2024</div>
+          <div class="exp-body">
+            <h3 class="exp-role">B.Sc. Information Technology Management</h3>
+            <p class="exp-company">Ravenshaw University, Cuttack</p>
+            <p class="exp-desc">
+              Three-year undergraduate programme covering computer architecture, data structures,
+              DBMS, operating systems, web technology, networking, and software engineering.
+              Graduated 2024.
+            </p>
+            <div class="exp-tags">
+              <span>Java</span><span>C / C++</span><span>SQL</span><span>Web Tech</span><span>OS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-year">2019 — 2021</div>
+          <div class="exp-body">
+            <h3 class="exp-role">Class XII (Science)</h3>
+            <p class="exp-company">Nayagarh HSS</p>
+            <p class="exp-desc">Completed higher secondary education with a Science stream.</p>
+            <div class="exp-tags"><span>Science</span></div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-year">2019</div>
+          <div class="exp-body">
+            <h3 class="exp-role">Class X Board</h3>
+            <p class="exp-company">DHS</p>
+            <p class="exp-desc">Completed matriculation board examinations.</p>
+            <div class="exp-tags"><span>Board Exam</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="exp-divider reveal"></div>
+
+      <div class="section-label reveal" style="margin-top: 64px;">
+        <span class="label-line"></span>
+        <span class="label-text">Certifications</span>
+      </div>
+      <h2 class="section-heading reveal">Licenses &amp; Certs</h2>
+
+      <div class="cert-grid">
+        <!--
+          ╔══════════════════════════════════════════════════════╗
+          ║  TO ADD A NEW CERT: copy one .cert-card block below  ║
+          ║  Fill in: icon class, title, issuer, date + ID,      ║
+          ║  and replace href="#" with your verify link.         ║
+          ╚══════════════════════════════════════════════════════╝
+        -->
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">
+            <i class="fas fa-file-contract"></i>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Solidity Smart Contract Development</h3>
+            <p class="cert-issuer">Cyfrin Updraft</p>
+            <p class="cert-date">Dec 2025 &nbsp;·&nbsp; ID: 5V25VRT2WGNW</p>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="cert-verify" aria-label="Verify certificate">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Blockchain Basics</h3>
+            <p class="cert-issuer">Cyfrin Updraft</p>
+            <p class="cert-date">Jan 2026</p>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="cert-verify" aria-label="Verify certificate">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon cert-icon--google">
+            <i class="fab fa-google"></i>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Foundations of UX Design</h3>
+            <p class="cert-issuer">Google</p>
+            <p class="cert-date">Jul 2023</p>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="cert-verify" aria-label="Verify certificate">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <!--
+          PASTE YOUR NEXT CERT BELOW THIS LINE:
+
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+            <div class="cert-body">
+              <h3 class="cert-title">Certificate Name</h3>
+              <p class="cert-issuer">Issuing Organization</p>
+              <p class="cert-date">Month Year &nbsp;·&nbsp; ID: XXXXX</p>
+            </div>
+            <a href="CREDENTIAL_URL" target="_blank" rel="noopener" class="cert-verify">
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        -->
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======== CV ======== -->
+  <section id="cv" class="section cv-section">
+    <div class="container">
+      <div class="cv-inner reveal">
+        <div class="cv-text">
+          <div class="section-label">
+            <span class="label-line"></span>
+            <span class="label-text">CV</span>
+          </div>
+          <h2 class="section-heading">Want the full<br /><em>picture?</em></h2>
+          <p>My résumé covers every project, role, and skill in detail. Download it and reach out if something catches your eye.</p>
+        </div>
+        <div class="cv-action">
+          <a href="images/CV.pdf" download class="btn btn-primary btn-large">
+            Download CV <i class="fas fa-download"></i>
+          </a>
+          <span class="cv-updated">Last updated Feb 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA BANNER ======== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <p class="cta-eyebrow">Open to opportunities</p>
+        <h2 class="cta-heading">
+          Got a project or<br />role in mind?
+        </h2>
+        <a href="mailto:suvepatra2003@gmail.com" class="btn btn-white btn-large">
+          Let's make it happen <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT ======== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span class="label-text">Contact</span>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h2 class="section-heading">Let's build<br />something<br /><em>together.</em></h2>
+          <p>Whether it's a project, a role, a collab, or just a chat — my inbox is open.</p>
+          <!-- FIXED: was a broken markdown-style link in your pasted code -->
+          <a href="mailto:suvepatra2003@gmail.com" class="contact-email">
+            suvepatra2003@gmail.com <i class="fas fa-arrow-right"></i>
+          </a>
+          <div class="social-row">
+            <a href="https://github.com/suvepatra004/" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/suvendu-kumar-patra-723850230/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://leetcode.com/" target="_blank" rel="noopener" aria-label="LeetCode" class="social-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:suvepatra2003@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" placeholder="you@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
+            <span id="form-msg"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== README / FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="readme-card reveal">
+        <div class="readme-header">
+          <div class="readme-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="readme-filename">README.md</span>
+        </div>
+        <div class="readme-body">
+          <h3 class="readme-h1"># Hi, I'm Suvendu 👋</h3>
+          <!-- CHANGED: updated badges to reflect current status -->
+          <p class="readme-line"><span class="md-badge">Aspiring Frontend Dev</span> <span class="md-badge">Product Builder</span> <span class="md-badge">Web3 Explorer</span></p>
+          <br />
+          <p class="readme-line"><span class="md-key">## About Me</span></p>
+          <p class="readme-body-text">
+            I'm an aspiring frontend developer based in India, focused on building clean web products.
+            Previously at Accenture as a QA Engineer, now sharpening my React and Web3 skills.
+            Graduated with a B.Sc. in ITM from Ravenshaw University (2021–2024).
+          </p>
+          <br />
+          <p class="readme-line"><span class="md-key">## Tech Stack</span></p>
+          <p class="readme-code"><code>HTML · CSS · JavaScript · React · Java · Spring Boot · SQL · Git</code></p>
+          <br />
+          <p class="readme-line"><span class="md-key">## Currently Learning</span></p>
+          <p class="readme-body-text">⚛️ React — components, hooks, state management.</p>
+          <p class="readme-body-text">🔗 Web3 &amp; Solidity — smart contracts, dApps, blockchain fundamentals.</p>
+          <br />
+          <p class="readme-line"><span class="md-key">## Fun Facts</span></p>
+          <p class="readme-body-text">🚴 Cyclist &nbsp;|&nbsp; 🎵 Music listener &nbsp;|&nbsp; ✍️ Occasional writer</p>
+          <br />
+          <p class="readme-line"><span class="md-key">## Connect</span></p>
+          <p class="readme-body-text">📧 <a href="mailto:suvepatra2003@gmail.com" class="readme-link">suvepatra2003@gmail.com</a></p>
+          <p class="readme-body-text">💼 <a href="https://www.linkedin.com/in/suvendu-kumar-patra-723850230/" target="_blank" rel="noopener" class="readme-link">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/suvepatra004/" target="_blank" rel="noopener" class="readme-link">GitHub</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Suvendu Kumar Patra</span>
+        <span>Built with ❤️ — HTML, CSS &amp; JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
