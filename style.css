@@ -1345,12 +1345,29 @@ body.cursor-hover .cursor-follower {
 
 /* Responsive: cert cards on small screens */
 @media (max-width: 480px) {
-  .cert-card {
-    padding: 20px;
-    gap: 16px;
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
   }
-  .cert-title {
-    font-size: 14px;
-    white-space: normal;
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ADDED: prevent nav CTA from inheriting full width */
+  .nav-cta-btn {
+    width: auto;
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+  .hero-img-wrap {
+    width: 200px;
+  }
+  .project-meta {
+    padding: 24px;
+  }
+  .readme-body {
+    padding: 20px;
   }
 }
