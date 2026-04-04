@@ -91,7 +91,7 @@
       property="og:url"
       content="https://suvendu-personal-port.vercel.app/"
     />
-    <!-- Replace with your actual URL -->
+    <!-- Replace with actual URL -->
     <meta
       property="og:title"
       content="Suvendu Kumar Patra | Frontend Developer & Web3 Explorer"
@@ -169,10 +169,24 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
-o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
-o.onload=function(){window.trackingFunctions.onLoad({appId:"69ba871fbb4769000d442b65"})},
-document.head.appendChild(o)}initApollo();</script>
+    <script>
+      function initApollo() {
+        var n = Math.random().toString(36).substring(7),
+          o = document.createElement("script");
+        ((o.src =
+          "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" +
+          n),
+          (o.async = !0),
+          (o.defer = !0),
+          (o.onload = function () {
+            window.trackingFunctions.onLoad({
+              appId: "69ba871fbb4769000d442b65",
+            });
+          }),
+          document.head.appendChild(o));
+      }
+      initApollo();
+    </script>
   </head>
   <body>
     <!-- ======== CURSOR ======== -->
@@ -232,18 +246,24 @@ document.head.appendChild(o)}initApollo();</script>
         </div>
       </div>
       <div class="hero-marquee-wrap">
-        <!-- CHANGED: updated marquee to reflect current status -->
+        <!-- CHANGED: marquee to reflect current status -->
         <div class="hero-marquee">
-          <span>Frontend Dev</span><span class="sep">·</span>
-          <span>Product Builder</span><span class="sep">·</span>
-          <span>Web3 Explorer</span><span class="sep">·</span>
-          <span>React Learner</span><span class="sep">·</span>
-          <span>Solidity</span><span class="sep">·</span>
-          <span>Frontend Dev</span><span class="sep">·</span>
-          <span>Product Builder</span><span class="sep">·</span>
-          <span>Web3 Explorer</span><span class="sep">·</span>
-          <span>React Learner</span><span class="sep">·</span>
-          <span>Solidity</span><span class="sep">·</span>
+          <span>React.js</span><span class="sep">·</span> <span>Next.js</span
+          ><span class="sep">·</span> <span>Node.js</span
+          ><span class="sep">·</span> <span>Solidity</span
+          ><span class="sep">·</span> <span>TypeScript</span
+          ><span class="sep">·</span> <span>Tailwind CSS</span
+          ><span class="sep">·</span> <span>MongoDB</span
+          ><span class="sep">·</span> <span>Express.js</span
+          ><span class="sep">·</span> <span>Smart Contracts</span
+          ><span class="sep">·</span> <span>REST APIs</span
+          ><span class="sep">·</span> <span>Web3.js</span
+          ><span class="sep">·</span> <span>Ethers.js</span
+          ><span class="sep">·</span> <span>Git & GitHub</span
+          ><span class="sep">·</span> <span>Responsive UI</span
+          ><span class="sep">·</span> <span>Hardhat</span
+          ><span class="sep">·</span> <span>Redux</span
+          ><span class="sep">·</span>
         </div>
       </div>
     </section>
@@ -264,21 +284,23 @@ document.head.appendChild(o)}initApollo();</script>
             </h2>
           </div>
           <div class="about-right reveal">
-            <!-- CHANGED: replaced QA Engineer mention with Aspiring Frontend Developer -->
             <p class="about-body">
-              Hey! I'm Suvendu, an
-              <strong>Aspiring Frontend Developer</strong> based in India,
-              passionate about building clean, user-focused web products. After
-              completing a B.Sc. in ITM from Ravenshaw University and a stint at
-              Accenture, I'm now fully focused on growing as a frontend
-              developer and product builder.
+              Hey! I'm Suvendu, a <strong>Frontend Developer</strong> based in
+              Bhubaneswar, India. I previously worked at
+              <strong>Accenture</strong> testing enterprise applications, and
+              these days I'm channeling that into building on the frontend
+              working with <strong>React, Node.js</strong>, and the broader MERN
+              stack. I'm also exploring Web3 and slowly getting my hands dirty
+              with Solidity. Open to
+              <strong>Frontend or Fullstack roles</strong> where I can ship real
+              things.
             </p>
-            <p class="about-body">
+            <!-- <p class="about-body">
               I'm currently deepening my skills in <strong>React</strong>,
               exploring <strong>Web3 &amp; Solidity</strong> smart contracts,
               and working on personal projects. When I'm not in the editor, I'm
               cycling, writing, or tuned into something good.
-            </p>
+            </p> -->
             <div class="about-tags">
               <span class="tag">HTML · CSS · JS</span>
               <span class="tag">React</span>
@@ -338,19 +360,86 @@ document.head.appendChild(o)}initApollo();</script>
                 <span>React</span><span>Tailwind</span><span>JavaScript</span>
                 <span>Next.js</span><span>Framer Motion</span>
               </div>
-              <a
-                href="https://github.com/suvepatra004/lilac-clone"
-                target="_blank"
-                rel="noopener"
-                class="project-cta"
-              >
-                View on GitHub <i class="fas fa-arrow-right"></i>
-              </a>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/suvepatra004/lilac-clone"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-cta"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a
+                  href="http://lilac-clone-seven.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-cta project-cta--live"
+                >
+                  <i class="fas fa-circle-dot"></i> Live
+                </a>
+              </div>
             </div>
           </article>
 
           <!-- Project 2 -->
           <article class="project-card reveal" data-index="02">
+            <div class="project-img-wrap">
+              <img
+                src="images/work-1.png"
+                alt="Personal portfolio website by Suvendu Kumar Patra"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <a
+                  href="http://lilac-clone-seven.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link-icon"
+                  aria-label="Visit site"
+                >
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-info">
+                <span class="project-num">02</span>
+                <div>
+                  <h3 class="project-title">Psychologist Landing Page</h3>
+                  <p class="project-desc">
+                    A modern, responsive landing page for a licensed clinical
+                    psychologist specializing in anxiety, trauma, and burnout
+                    therapy, Dr. Maya Reynolds.
+                  </p>
+                </div>
+              </div>
+              <div class="project-tags">
+                <span>React</span><span>Tailwind</span><span>JavaScript</span>
+                <span>Next.js</span><span>Framer Motion</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/suvepatra004/lilac-clone"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-cta"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a
+                  href="http://lilac-clone-seven.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-cta project-cta--live"
+                >
+                  <span class="live-dot"></span> Live
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!---------- Project 3 -------------->
+          <article class="project-card reveal" data-index="03">
             <div class="project-img-wrap">
               <img
                 src="images/work-2.png"
@@ -397,8 +486,8 @@ document.head.appendChild(o)}initApollo();</script>
             </div>
           </article>
 
-          <!-- Project 3 -->
-          <article class="project-card reveal" data-index="02">
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-index="04">
             <div class="project-img-wrap">
               <img
                 src="images/work-3.png"
@@ -419,7 +508,7 @@ document.head.appendChild(o)}initApollo();</script>
             </div>
             <div class="project-meta">
               <div class="project-info">
-                <span class="project-num">03</span>
+                <span class="project-num">04</span>
                 <div>
                   <h3 class="project-title">Personal Expense Tracker</h3>
                   <p class="project-desc">
@@ -444,7 +533,7 @@ document.head.appendChild(o)}initApollo();</script>
           </article>
 
           <!-- Project Bottom -->
-          <article class="project-card reveal" data-index="03">
+          <article class="project-card reveal" data-index="">
             <div class="project-img-wrap project-img-placeholder">
               <span class="placeholder-text">Screenshot Coming Soon</span>
               <div class="project-overlay">
@@ -461,7 +550,7 @@ document.head.appendChild(o)}initApollo();</script>
             </div>
             <div class="project-meta">
               <div class="project-info">
-                <span class="project-num">04</span>
+                <span class="project-num">00</span>
                 <div>
                   <h3 class="project-title">More on GitHub</h3>
                   <p class="project-desc">
@@ -489,7 +578,6 @@ document.head.appendChild(o)}initApollo();</script>
     </section>
 
     <!-- ======== EXPERIENCE ======== -->
-    <!-- CHANGED: Completely rebuilt — Accenture only, + Currently Learning, + Education, + Certifications -->
     <section id="experience" class="section experience">
       <div class="container">
         <!-- WHERE I'VE WORKED -->
@@ -626,14 +714,6 @@ document.head.appendChild(o)}initApollo();</script>
         <h2 class="section-heading reveal">Licenses &amp; Certs</h2>
 
         <div class="cert-grid">
-          <!--
-          ╔══════════════════════════════════════════════════════╗
-          ║  TO ADD A NEW CERT: copy one .cert-card block below  ║
-          ║  Fill in: icon class, title, issuer, date + ID,      ║
-          ║  and replace href="#" with your verify link.         ║
-          ╚══════════════════════════════════════════════════════╝
-        -->
-
           <div class="cert-card reveal">
             <div class="cert-icon">
               <i class="fas fa-file-contract"></i>
@@ -957,5 +1037,3 @@ document.head.appendChild(o)}initApollo();</script>
     <script src="script.js"></script>
   </body>
 </html>
-
-

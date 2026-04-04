@@ -686,23 +686,84 @@ body.cursor-hover .cursor-follower {
   color: var(--white-2);
 }
 
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* GitHub — filled, primary */
 .project-cta {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--purple);
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
   text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 8px;
+  background: var(--purple);
   transition:
-    gap 0.2s,
+    background 0.2s,
+    border-color 0.2s,
     color 0.2s;
   width: fit-content;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .project-cta:hover {
-  gap: 14px;
+  background: transparent;
+  color: var(--purple);
+}
+
+/* Live — outlined, secondary */
+.project-cta--live {
+  background: transparent;
+  color: var(--white-2);
+}
+
+.project-cta--live:hover {
+  background: color-mix(in srgb, #ff0000 30%, transparent);
   color: #fff;
+}
+
+/* The solid red dot */
+.live-dot {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f04444;
+  flex-shrink: 0;
+}
+
+/* The radiating ring */
+.live-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #f04444;
+  animation: live-ping 2s ease-out infinite;
+}
+
+@keyframes live-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
 }
 
 /* ============================================================
